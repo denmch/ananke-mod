@@ -30,3 +30,23 @@
     {{ partial "svg/github.svg" (dict "size" $icon_size) }}
   </a>
 {{ end }}
+{{ with .Site.Params.codepen }}
+  <a href="{{ . }}" class="link-transition codepen link dib z-999 pt3 pt0-l mr2" title="Codepen link">
+    {{ partial "svg/codepen.svg" (dict "size" $icon_size) }}
+  </a>
+{{ end }}
+{{ with .Site.Params.stackoverflow }}
+  <a href="{{ . }}" class="link-transition stackoverflow link dib z-999 pt3 pt0-l mr2" title="Stackoverflow link">
+    {{ partial "svg/stackoverflow.svg" (dict "size" $icon_size) }}
+  </a>
+{{ end }}
+{{ with .Site.Params.medium }}
+  <a href="{{ . }}" class="link-transition medium link dib z-999 pt3 pt0-l mr2" title="Medium link">
+    {{ partial "svg/medium.svg" (dict "size" $icon_size) }}
+  </a>
+{{ end }}
+{{ with .Site.Params.spotify }}
+  <a href="{{ . }}" class="link-transition spotify link dib z-999 pt3 pt0-l mr2" title="Spotify link">
+    {{ partial "svg/spotify.svg" (dict "size" $icon_size) }}
+  </a>
+{{ end }}

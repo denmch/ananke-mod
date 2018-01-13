@@ -1,6 +1,12 @@
-.facebook, .twitter, .instagram, .youtube, .github, .linkedin {
-  fill: #BABABA;
+.facebook, .twitter, .instagram, .youtube, .github, .linkedin, .codepen, .stackoverflow, .medium, .spotify {
+  fill: #bababa;
 }
+
+.facebook:hover, .twitter:hover, .instagram:hover, .youtube:hover, .github:hover, .linkedin:hover, .codepen:hover, .stackoverflow:hover, .medium:hover, .spotify:hover {
+  fill: #ffffff;
+}
+
+/*
 .facebook:hover {
   fill: #3b5998;
 }
@@ -24,3 +30,4 @@
 .linkedin:hover {
   fill: #0077b5
 }
+*/

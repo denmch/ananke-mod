@@ -6,7 +6,6 @@
   fill: #ffffff;
 }
 
-/*
 .facebook:hover {
   fill: #3b5998;
 }
@@ -23,11 +22,35 @@
   fill: #cd201f;
 }
 
-.github:hover {
-  fill: #6cc644;
+.linkedin:hover {
+  fill: #0077b5;
 }
 
-.linkedin:hover {
-  fill: #0077b5
+.dribbble:hover {
+  fill: #c43d61;
 }
-*/
+
+.dribbble:hover circle {
+  fill: #e84c89;
+}
+
+.stackoverflow:hover {
+  fill: #fe7a16;
+}
+
+.medium:hover {
+  fill: #03A87C;
+}
+
+.spotify:hover {
+  fill: #1ed760;
+}
+
+.codepen:hover,
+.facebook:hover rect,
+.github:hover,
+.linkedin:hover rect,
+.spotify:hover circle,
+.youtube:hover rect {
+  fill: #ffffff;
+}

@@ -19,7 +19,7 @@
     {{ if .Params.showthedate }}
     <span class="near-black fw3">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
     {{ end }}
-      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img dark-gray">
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img {{ .Site.Params.text_color | default "mid-gray" }}">
         {{ .Content }}
       </div>
     </article>

@@ -5885,52 +5885,72 @@ pre {
   background-color: #ddd;
 }
 
-.facebook, .twitter, .instagram, .youtube, .github, .linkedin, .codepen, .stackoverflow, .medium, .spotify, .dribbble {
-  fill: #bababa;
+.facebook,
+.twitter,
+.instagram,
+.youtube,
+.github,
+.linkedin,
+.codepen,
+.stackoverflow,
+.medium,
+.spotify,
+.dribbble {
+    fill: #bababa;
 }
 
-.facebook:hover, .twitter:hover, .instagram:hover, .youtube:hover, .github:hover, .linkedin:hover, .codepen:hover, .stackoverflow:hover, .medium:hover, .spotify:hover, .dribbble:hover {
-  fill: #ffffff;
+.facebook:hover,
+.twitter:hover,
+.instagram:hover,
+.youtube:hover,
+.github:hover,
+.linkedin:hover,
+.codepen:hover,
+.stackoverflow:hover,
+.medium:hover,
+.spotify:hover,
+.dribbble:hover {
+    fill: #ffffff;
 }
 
 .facebook:hover {
-  fill: #3b5998;
+    fill: #3b5998;
 }
 
 .twitter:hover {
-  fill: #1da1f2;
+    fill: #1da1f2;
 }
 
 .instagram:hover {
-  fill: #e1306c;
+    fill: #e1306c;
 }
 
 .youtube:hover {
-  fill: #cd201f;
+    fill: #cd201f;
 }
 
 .linkedin:hover {
-  fill: #0077b5;
+    fill: #0077b5;
 }
 
 .dribbble:hover {
-  fill: #c43d61;
+    fill: #c43d61;
 }
 
 .dribbble:hover circle {
-  fill: #e84c89;
+    fill: #e84c89;
 }
 
 .stackoverflow:hover {
-  fill: #fe7a16;
+    fill: #fe7a16;
 }
 
 .medium:hover {
-  fill: #03A87C;
+    fill: #03A87C;
 }
 
 .spotify:hover {
-  fill: #1ed760;
+    fill: #1ed760;
 }
 
 .codepen:hover,
@@ -5939,7 +5959,15 @@ pre {
 .linkedin:hover rect,
 .spotify:hover circle,
 .youtube:hover rect {
-  fill: #ffffff;
+    fill: #ffffff;
+}
+
+.stackoverflow:hover #tray {
+    fill: #bcbbbb;
+}
+
+.stackoverflow:hover #stack {
+    fill: #f48024;
 }
 
 /* Put your custom styles here and run `npm start` from the "src" directory on */

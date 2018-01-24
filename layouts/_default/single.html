@@ -1,8 +1,7 @@
-{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
-{{ define "main" }}
-  <div class="flex-l mt2 mw8 center">
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }} {{ define "main" }}
+<div class="flex-l mt2 mw8 center">
     <article class="center cf pv5 ph3 ph4-ns mw7">
-     <!-- <header>
+        <!-- <header>
         <p class="f6 b helvetica tracked">
           {{ humanize .Section | upper  }}
         </p>
@@ -16,15 +15,14 @@
         {{ end }}
       </header>
     -->
-    {{ if .Params.showthedate }}
-    <span class="near-black fw3">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-    {{ end }}
-      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img {{ .Site.Params.text_color | default "mid-gray" }}">
-        {{ .Content }}
-      </div>
+        {{ if .Params.showthedate }}
+        <span class="near-black fw3">{{ .Date.Format "Mon, Jan 2, 2006" }}</span> {{ end }} {{ with $.Param "text_color" | default "mid-gray"}}
+        <div class="nested-copy-line-height lh-copy f4 nested-links nested-img {{ . }}">
+            {{ end }} {{ .Content }}
+        </div>
     </article>
     <aside class="ph3 mt2 mt6-ns">
-      {{ partial "menu-contextual.html" . }}
+        {{ partial "menu-contextual.html" . }}
     </aside>
-  </div>
+</div>
 {{ end }}

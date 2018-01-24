@@ -1,57 +1,44 @@
 <!-- TODO: Add follow intents where available TODO: Revisit color and hover color -->
-{{ $icon_size := "32px" }}
-{{ with .Site.Params.facebook }}
-  <a href="{{ . }}" class="link-transition facebook link dib z-999 pt3 pt0-l mr2" title="Facebook link">
+{{ $icon_size := "32px" }} {{ with .Site.Params.facebook }}
+<a href="{{ . }}" class="link-transition facebook link dib z-999 pt3 pt0-l mr2" title="Facebook link">
     {{ partial "svg/facebook.svg" (dict "size" $icon_size) }}
-  </a>
-{{ end }}
-{{ with .Site.Params.twitter }}
-  <a href="{{ . }}" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+  </a> {{ end }} {{ with .Site.Params.twitter }}
+<a href="{{ . }}" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
     {{ partial "svg/twitter.svg" (dict "size" $icon_size) }}
-  </a>
-{{ end }}
-{{ with .Site.Params.instagram }}
-  <a href="{{ . }}" class="link-transition instagram link dib z-999 pt3 pt0-l mr2" title="Instagram link">
+  </a> {{ end }} {{ with .Site.Params.instagram }}
+<a href="{{ . }}" class="link-transition instagram link dib z-999 pt3 pt0-l mr2" title="Instagram link">
     {{ partial "svg/instagram.svg" (dict "size" $icon_size) }}
-  </a>
-{{ end }}
-{{ with .Site.Params.youtube }}
-  <a href="{{ . }}" class="link-transition youtube link dib z-999 pt3 pt0-l mr2" title="Youtube link">
+  </a> {{ end }} {{ with .Site.Params.youtube }}
+<a href="{{ . }}" class="link-transition youtube link dib z-999 pt3 pt0-l mr2" title="Youtube link">
     {{ partial "svg/youtube.svg" (dict "size" $icon_size) }}
-  </a>
-{{ end }}
-{{ with .Site.Params.linkedin }}
-  <a href="{{ . }}" class="link-transition linkedin link dib z-999 pt3 pt0-l mr2" title="LinkedIn link">
+  </a> {{ end }} {{ with .Site.Params.linkedin }}
+<a href="{{ . }}" class="link-transition linkedin link dib z-999 pt3 pt0-l mr2" title="LinkedIn link">
     {{ partial "svg/linkedin.svg" (dict "size" $icon_size) }}
-  </a>
-{{ end }}
-{{ with .Site.Params.github }}
-  <a href="{{ . }}" class="link-transition github link dib z-999 pt3 pt0-l mr2" title="Github link">
+  </a> {{ end }} {{ with .Site.Params.github }}
+<a href="{{ . }}" class="link-transition github link dib z-999 pt3 pt0-l mr2" title="Github link">
     {{ partial "svg/github.svg" (dict "size" $icon_size) }}
-  </a>
-{{ end }}
-{{ with .Site.Params.stackoverflow }}
-  <a href="{{ . }}" class="link-transition stackoverflow link dib z-999 pt3 pt0-l mr2" title="Stackoverflow link">
+  </a> {{ end }} {{ with .Site.Params.stackoverflow }}
+<a href="{{ . }}" class="link-transition stackoverflow link dib z-999 pt3 pt0-l mr2" title="Stackoverflow link">
     {{ partial "svg/stackoverflow.svg" (dict "size" $icon_size) }}
-  </a>
-{{ end }}
-{{ with .Site.Params.codepen }}
-  <a href="{{ . }}" class="link-transition codepen link dib z-999 pt3 pt0-l mr2" title="Codepen link">
+  </a> {{ end }} {{ with .Site.Params.codepen }}
+<a href="{{ . }}" class="link-transition codepen link dib z-999 pt3 pt0-l mr2" title="Codepen link">
     {{ partial "svg/codepen.svg" (dict "size" $icon_size) }}
-  </a>
-{{ end }}
-{{ with .Site.Params.dribbble }}
+  </a> {{ end }} {{ with .Site.Params.dribbble }}
 <a href="{{ . }}" class="link-transition dribbble link dib z-999 pt3 pt0-l mr2" title="Dribbble link">
   {{ partial "svg/dribbble.svg" (dict "size" $icon_size) }}
-</a>
-{{ end }}
-{{ with .Site.Params.medium }}
-  <a href="{{ . }}" class="link-transition medium link dib z-999 pt3 pt0-l mr2" title="Medium link">
+</a> {{ end }} {{ with .Site.Params.medium }}
+<a href="{{ . }}" class="link-transition medium link dib z-999 pt3 pt0-l mr2" title="Medium link">
     {{ partial "svg/medium.svg" (dict "size" $icon_size) }}
-  </a>
-{{ end }}
-{{ with .Site.Params.spotify }}
-  <a href="{{ . }}" class="link-transition spotify link dib z-999 pt3 pt0-l mr2" title="Spotify link">
+  </a> {{ end }} {{ with .Site.Params.spotify }}
+<a href="{{ . }}" class="link-transition spotify link dib z-999 pt3 pt0-l mr2" title="Spotify link">
     {{ partial "svg/spotify.svg" (dict "size" $icon_size) }}
-  </a>
-{{ end }}
+  </a> {{ end }}
+
+
+<div style="position: absolute; top: .5em; right: 1.2em;">
+    <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+    <script type='text/javascript'>
+        kofiwidget2.init('Buy Me a Coffee', '#5200A3', 'C0C585PC');
+        kofiwidget2.draw();
+    </script>
+</div>

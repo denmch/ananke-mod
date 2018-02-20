@@ -12,3 +12,7 @@ figure {
 iframe {
     width: 100%;
 }
+
+mark {
+	background-color: #ffea9e;
+}

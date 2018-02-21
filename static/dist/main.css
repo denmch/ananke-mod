@@ -5988,3 +5988,9 @@ iframe {
 mark {
 	background-color: #ffea9e;
 }
+
+code {
+    background: rgba(23, 52, 72, .85);
+    color: #ffffff;
+    padding: .2em .325em;
+}
